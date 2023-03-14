@@ -1,0 +1,69 @@
+.register-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 850px;
+    border-color: black;
+    padding-left: 100px;
+    padding-bottom: 1000px;
+   
+  }
+  .ControlText{
+
+  
+    font-size: 24px;
+    font-family: 'Arial Narrow Bold';
+   font-weight: normal;
+     padding-top: 30px;
+     padding-right: 310px;
+     margin-bottom: 50px;
+  }
+  
+  div.Butoane{
+    margin-right: 43rem;
+    white-space: nowrap;
+    
+  }
+  .Butoane input{
+    margin-left:20px ;
+  
+  }
+  .userInformation{
+  
+    margin-right: 500px;
+  }
+  
+  .firstname{
+   display: inline-block;
+   margin-right: 30px;
+  }
+  
+  .lastname{
+  display: contents;
+  }
+  .fname{
+    margin-left:9px;
+  }
+  
+  .lname{
+    margin-left:9px;
+  }
+  .link-btn {
+    background: none;
+    color: black;
+    text-decoration: underline;
+  }
+
+
+
+  .Account {
+    margin-right: 900px;
+    margin-bottom: 3px;
+
+  }
+
+  .Imagine2{
+    position: absolute;
+    top: 0;
+    left: 0; 
+  }

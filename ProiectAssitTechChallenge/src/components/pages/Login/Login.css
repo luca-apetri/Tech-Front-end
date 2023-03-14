@@ -1,0 +1,28 @@
+
+
+  .Remember{
+    margin-right:140px ;
+    padding-left: 10px;
+     padding-bottom : 19px ;
+   }
+   .login-form  {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 999px;
+    border-color: black;
+    padding-bottom: 100px;
+
+    margin-bottom: 400px;
+    margin-right: 300px;
+  }
+  
+.Imagine{
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    
+  }
+  
+  

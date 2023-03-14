@@ -1,0 +1,32 @@
+
+
+
+
+
+.scroll-bg{
+    width: 1400px;
+    margin-left:300px ;
+    background-color: aqua;
+    margin-top: '4000px';
+  }
+  .scroll-div{
+    width:400 px;
+    height: 300px;
+    overflow:hidden;
+    overflow-y: scroll;
+  }
+  .scroll-bg1{
+    width: 1400px;
+  
+    margin: 10% auto;
+    background-color: aqua;
+  
+    margin-left: 300px;
+  }
+  .scroll-div1{
+    width:400 px;
+    height: 300px;
+    overflow:hidden;
+    overflow-y: scroll;
+  }
+  
