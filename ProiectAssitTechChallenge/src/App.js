@@ -3,7 +3,8 @@ import './App.css';
 import { Login } from "./components/pages/Login/Login.jsx";
 import { Register } from "./components/pages/register/Register.jsx";
 import {  BrowseForm   } from "./components/pages/BrowseForm/BrowseForm.jsx";
-import img1 from './images/imaginE.png';
+import img1 from './images/loginPage.png';
+import img2 from './images/iconsEmail.png';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 
