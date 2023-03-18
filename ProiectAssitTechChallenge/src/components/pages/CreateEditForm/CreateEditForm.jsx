@@ -9,8 +9,13 @@ export const CreateEditForm = (props) => {
         <div className="Create-Edit-Forms">
             <div className="TextTitle">
                 <h1 >Create/Edit Form</h1>
-                <p></p>
+
+            
                 <h3>Please complete all the information bellow.</h3>
+
+               
+                <h3>Please complete all the information bellow</h3>
+
             </div>
             <img src={CEF} alt="imgCEF" style={{ width: '435px', height: '350px' }}/> 
             
@@ -23,7 +28,7 @@ export const CreateEditForm = (props) => {
                 
                 <div className="scroll-bg1" style={{ marginBottom: "90px" }}>
                     <div className="scroll-div1">
-                        <div class="scroll-object1">
+                        <div className="scroll-object1">
 
                         </div>
                     </div>

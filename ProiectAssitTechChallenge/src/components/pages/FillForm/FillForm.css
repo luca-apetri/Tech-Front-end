@@ -29,10 +29,15 @@ margin-bottom: 1000px;
   .cerere-de-inmatriculare input[type="email"] {
     width: 300px;
   }
+
 /*
 form div + div {
+=======
+
+/*form div + div {
+>>>>>>> 26b885cbe6d3381eae6584578bc0f6eca36aa94e
   margin-top:10px;
-}
+}*/
 
 */
 .butoane-radio{
