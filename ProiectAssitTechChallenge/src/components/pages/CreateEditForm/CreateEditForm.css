@@ -1,0 +1,36 @@
+.Create-Edit-Forms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .Create-Edit-Forms .TextTitle{
+    margin: 0;
+  }
+  
+  .Create-Edit-Forms img {
+    border-radius: 100px;
+    margin-left: auto;
+  }
+  
+  .Create-Edit-Forms .Left {
+    margin-left: auto;
+    flex: 1 1 50%;
+    order: 1;
+  }
+  
+  .Create-Edit-Forms .Right {
+    margin-right: auto;
+    flex: 1 1 50%;
+    order: 2;
+  }
+  
+  .Create-Edit-Forms .Bottom {
+    width: 100%;
+    order: 3;
+  }
+
+  .Create-Edit-Forms button{
+    margin-bottom: auto;
+  }
+  
