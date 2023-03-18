@@ -1,19 +1,23 @@
 import React, { useState,useRef } from "react";
 import { Link } from "react-scroll";
 import './CreateEditForm.css';
+import CEF from '../../../images/CreateEditForm.jpg'
 export const CreateEditForm = (props) => {
 
 
     return(
         
         <div className="Create-Edit-Forms">
-            <h1>Create/Edit Form</h1>
-            <h3>Please complete all the information bellow</h3>
-            <img src={CreateEditForm.jpg} alt="" style={{ width: '870px', height: '700px' }}/> 
+            <div className="TextTitle">
+                <h1 >Create/Edit Form</h1>
+                <p></p>
+                <h3>Please complete all the information bellow</h3>
+            </div>
+            <img src={CEF} alt="imgCEF" style={{ width: '435px', height: '350px' }}/> 
             
             <div className="Left">
                 <label htmlFor="title">Title:</label>
-                {/**/}<input type="text" placeholder="Title" id="title" name="title"style={{border: '1px solid black'}} />
+                <input type="text" placeholder="Title" id="title" name="title"style={{border: '1px solid black'}} />
                 <div className="scroll-bg1" style={{ marginBottom: "90px" }}>
                     <div className="scroll-div1">
                         <div class="scroll-object1">
@@ -61,7 +65,11 @@ export const CreateEditForm = (props) => {
             <div className="Bottom">
                 <label>Data retention period:</label>
                 <input type="number"></input>
+                <Link to="/browseForm">
+                <button type="create" style={{border: '1px solid black',width:"30px"}} onClick={() => props.onFormSwitch('browseForm')}>Create</button>
+                </Link>
             </div>
+            
 
         </div>
     )
