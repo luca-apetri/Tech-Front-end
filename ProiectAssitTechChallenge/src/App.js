@@ -3,6 +3,7 @@ import './App.css';
 import { Login } from "./components/pages/Login/Login.jsx";
 import { Register } from "./components/pages/register/Register.jsx";
 import {  BrowseForm   } from "./components/pages/BrowseForm/BrowseForm.jsx";
+import {  CreateEditForm  } from "./components/pages/CreateEditForm/CreateEditForm.jsx";
 import img1 from './images/imaginE.png';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register/>} />
+          <Route path="/CreateEditForm" element={<CreateEditForm/>} />
         
           <Route path="/browseForm" element={<BrowseForm />} />
         </Routes>
