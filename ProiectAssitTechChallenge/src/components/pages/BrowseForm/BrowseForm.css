@@ -1,12 +1,6 @@
 
-
-
-
-
 .scroll-bg{
     width: 1400px;
-
-    
     margin-left:300px ;
     background-color: aqua;
     margin-top: '4000px';
@@ -16,6 +10,7 @@
     height: 300px;
     overflow:hidden;
     overflow-y: scroll;
+    margin-top: 20px;
   }
   .scroll-bg1{
     width: 1400px;
@@ -24,6 +19,7 @@
     background-color: aqua;
   
     margin-left: 300px;
+    margin-top: 15px;
   }
   .scroll-div1{
     width:400 px;
@@ -31,4 +27,17 @@
     overflow:hidden;
     overflow-y: scroll;
   }
-  
+  .butoaneFormular{
+    margin-left: 130px;
+    margin-top:  10px;
+
+  }
+  .browse-form{
+    margin-top: 600px;
+    
+  }
+
+.butoaneSubmissions{
+  margin-left: 510px;
+  margin-bottom:100px ;
+}

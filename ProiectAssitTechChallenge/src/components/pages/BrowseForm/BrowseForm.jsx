@@ -11,9 +11,9 @@ import './BrowseForm.css';
   }*/
 
   const cereri = [
-    { id: 1, tip:"Cerere de inmatriculare" },
-    { id: 2, tip:"Cerere de nu stiu" },
-    { id: 3, tip:"Cerere de ceva" },
+    { id: 1, tip:"1. Cerere de inmatriculare" },
+    { id: 2, tip:"2. Cerere de inmatriculare " },
+    { id: 3, tip:"3. Cerere de inmatriculare " },
 ];
 export const BrowseForm = (props) => {
 
@@ -41,18 +41,20 @@ export const BrowseForm = (props) => {
 
   <div className="browse-form">
 
-      <h3>BROWSE FORMS</h3>
-
-  <p1 style={{ marginRight:'975px'}}>Select from a type</p1>
+      <h3 style={{marginLeft:'100px'}}>BROWSE FORMS</h3>
+<div className="propozitie"  style={{maxWidth: '210px',marginLeft:'264px'}}>
+<p1 >Select from a type</p1>
+  </div>
   <div className="scroll-bg">
   <div className="scroll-div">
   <div className="scroll-object">
-  <div className="itemiiDeSelectat">
-  
+
+   <div className="itemiiDeSelectat">
+
 
     {cereri.map((tip)=>(
        
-    <p key={tip.id} onClick={()=>handle_typeform_Click(tip)}  style={{marginRight:"1200px"}}>
+    <p key={tip.id} onClick={()=>handle_typeform_Click(tip)}  style={{marginRight:"100px"}}>
   
     {tip.tip}
 
@@ -62,7 +64,7 @@ export const BrowseForm = (props) => {
   ))}
       
   
-    </div>
+   </div>
 
   </div>
 
@@ -94,28 +96,61 @@ export const BrowseForm = (props) => {
     </button>
   </div>
 
-  <div className="scroll-bg1" style={{marginBottom:"1000px"}}>
+
+  <div className="scroll-bg1" style={{marginBottom:"90px"}}>
   <div className="scroll-div1">
   <div class="scroll-object1">
-    <p>MERGE</p>
-    <p>MERGE</p>
-    <p>MERGE</p>
-    <p>MERGE</p>
-    <p>MERGE</p>
-    <p>MERGE</p>
-    <p>MERGE</p>
-    <p>MERGE</p>
-    <p>MERGE</p>
-    <p>MERGE</p>
+  <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+      <thead>
+        <tr>
+          <th style={{ border: '1px solid black', padding: '10px' }}> </th>
+          <th style={{ border: '1px solid black', padding: '10px' }}> </th>
+          <th style={{ border: '1px solid black', padding: '10px' }}> </th>
+          <th style={{ border: '1px solid black', padding: '10px' }}> </th>
+          <th style={{ border: '1px solid black', padding: '10px' }}> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style={{ border: '1px solid black', padding: '40px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '40px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '40px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '40px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '40px' }}> </td>
+        </tr>
+        <tr>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+        </tr>
+        <tr>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+        </tr>
+        <tr>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+          <td style={{ border: '1px solid black', padding: '32px' }}> </td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
   </div>
   </div>
- <div className="butoaneSubmissions">
- <button type="submit" style={{border: '1px solid black',width:'200px',marginBottom:'100px'}} >
+ <div className="butoaneSubmissions" style={{maxWidth: '800px'}}>
+ <button type="submit" style={{border: '1px solid black',marginRight:'100px'}} >
    VIEW SUBMISSIONS
     </button>
 
-    <button type="submit" style={{border: '1px solid black',width:'200px',margin: '140px',marginBottom:'200px'}}>
+    <button type="submit" style={{border: '1px solid black'}}>
    SEARCH SUBMISSIONS 
     </button>
 
@@ -131,5 +166,5 @@ export const BrowseForm = (props) => {
 
     
 
-  );
-};
+  )
+}
