@@ -11,7 +11,7 @@ import img1 from './images/loginPage.png';
 
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-
+import { FillForm } from "./components/pages/FillForm/FillForm";
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
           <Route path="/CreateEditForm" element={<CreateEditForm/>} />
         
           <Route path="/browseForm" element={<BrowseForm />} />
+           <Route path="/fillForm" element={<FillForm />} />
         </Routes>
       </Router>
     </div>
