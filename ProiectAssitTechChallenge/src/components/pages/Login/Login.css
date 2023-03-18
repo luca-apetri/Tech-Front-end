@@ -1,28 +1,118 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(250, 235, 140, 1);
+  font-family: 'Merriweather';
+}
+
+.login-form
+{
+  width: 382px;
+  overflow: hidden;
+  margin: auto;
+  margin: 20 0 0 450px;
+  padding: 80px;
+  background: rgba(120, 120, 249, 1);
+  border-radius: 40px ;
+  padding: 20px;
+  margin-left: 900px;
+  height: 636px;
+}
+.login-form
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.login-form h1
+{
+  text-align: center;
+  color:white;
+  padding: 20px;
+  text-shadow:  1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.login-form label
+{
+  color:white;
+  font-size: 20px;
+  text-align: left;
+  width: 200px;
+  margin-right:250px ;
+}
 
 
-  .Remember{
-    margin-right:140px ;
-    padding-left: 10px;
-     padding-bottom : 19px ;
-   }
-   .login-form  {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    margin-left: 999px;
-    border-color: black;
-    padding-bottom: 100px;
+#email
+{
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  padding-left: 20px;
 
-    margin-bottom: 400px;
-    margin-right: 300px;
-  }
+}
+
+#password
+{
+  width: 300px;
+  height: 20px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-bottom: 2px; 
+}
+.Remember
+{
+  display: flex;
+  align-items:center;
   
-.Imagine{
-    position: absolute;
-    top: 0;
-    left: 0;
-   
-    
-  }
-  
+}
+.Remember input 
+{
+  margin-left: 26px;
+  margin-right: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.Remember label 
+{
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin-left: 0px;
+}
+.submit
+{
+  width: 335px;
+  height: 50px;
+  border: 2px solid #0f1870; 
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-size: 27px;
+  text-align: center;
+  font-family: 'Merriweather';
+  color: white;
+  background-color: rgba(18, 18, 100, 1);
+} 
+.submit:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.link-btn
+{
+  margin-top: 170px;
+  font-family: 'Merriweather';
+  text-decoration: none; 
+  background: none;
+  color: rgba(18, 18, 100, 1);
+  font-size: 16px;
+}
+.Imagine
+{
+  position: absolute;
+  top: 0;
+  left: 2;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
+}
+ 
   
