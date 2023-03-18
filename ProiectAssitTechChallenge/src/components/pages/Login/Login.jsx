@@ -4,16 +4,15 @@ import img1 from '../../../images/loginPage.png';
 
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
 export const Login = (props) => {
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState("");
     const [pass, setPass] = useState('');
 
     const [rememberMe, setRememberMe] = useState(false);
     const [formType, setFormType] = useState("login");
-    
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('email:', email);
-        console.log('password:', pass);
+      
         ///aici se trimit datele catre back-end
     }
 
@@ -22,6 +21,8 @@ export const Login = (props) => {
     }
 
     const handleFormSwitch = (formType) => {
+        console.log('email:', email);
+        console.log('password:', pass);
         setFormType(formType);
     };
 

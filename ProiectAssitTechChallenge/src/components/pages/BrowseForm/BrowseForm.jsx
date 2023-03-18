@@ -43,7 +43,7 @@ export const BrowseForm = (props) => {
 
       <h3 style={{marginLeft:'100px'}}>BROWSE FORMS</h3>
 <div className="propozitie"  style={{maxWidth: '210px',marginLeft:'264px'}}>
-<p1 >Select from a type</p1>
+<p >Select from a type</p>
   </div>
   <div className="scroll-bg">
   <div className="scroll-div">
@@ -99,7 +99,7 @@ export const BrowseForm = (props) => {
 
   <div className="scroll-bg1" style={{marginBottom:"90px"}}>
   <div className="scroll-div1">
-  <div class="scroll-object1">
+  <div className="scroll-object1">
   <table style={{ borderCollapse: 'collapse', width: '100%' }}>
       <thead>
         <tr>

@@ -6,19 +6,31 @@ export const Register = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
-   const[lname,setlName]=useState('');
-   const[compName,setCompName]=useState('');
-   const[compAdress,setCompAdress]=useState('');
-   const[fiscCode,setFiscCode]=useState('');
-   const[adress,setAdress]=useState('');
-   const[individual,setIndividual]=useState('');
-   const[company,setCompany]=useState('');
-   const[publicIn,setPublicIn]=useState('');
-
+    const[lname,setlName]=useState('');
+    const[compName,setCompName]=useState('');
+    const[compAdress,setCompAdress]=useState('');
+    const[fiscCode,setFiscCode]=useState('');
+    const[adress,setAdress]=useState('');
+    const[individual,setIndividual]=useState('');
+    const[company,setCompany]=useState('');
+    const[publicIn,setPublicIn]=useState('');
+    const[accountType,setAccountType]=useState('');
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(email);
     }
+    const handleFormSwitch = (formType) => {
+        console.log("Nume:", name);
+        console.log("Prenume:",lname);
+        console.log("Adresa:",adress);
+        console.log("CompanyName:",compName);
+        console.log("FiscalCode:",fiscCode);
+        console.log("AccountType:",accountType);
+        console.log("Email:",email);
+        console.log("Parola:",pass);
+      
+    };
     const onFormSwitch =(e)=>{
 
         console.log('email');
@@ -31,23 +43,23 @@ export const Register = (props) => {
            <div className= "register-form">
         <form id="register-form" onSubmit={handleSubmit}>
              <h1>Welcome!</h1>
-            <p1 className="ControlText">Please complete all informations below:</p1>
+            <p className="ControlText">Please complete all informations below:</p>
                   <div className="Account">
-                   <p1>Account Type:</p1>
+                   <p>Account Type:</p>
                  </div>
                 
                
          <div className="Butoane">
-          <input value={individual} type="radio"   name="group" onChange={(e)=>setIndividual(e.target.value)} id="individual"/>
+          <input value={individual} type="radio"   name="group" onChange={(e)=>setAccountType(e.target.value)} id="individual"/>
         <label htmlFor="individual">
             Individual
         </label>
 
-        <input value={company} type="radio" name="group" onChange={(e)=>setCompany(e.target.value)} id="company"/>
+        <input value={company} type="radio" name="group" onChange={(e)=>setAccountType(e.target.value)} id="company"/>
         <label htmlFor="company">
             Company
         </label>
-        <input value={publicIn} type="radio" name="group" onChange={(e)=>setPublicIn(e.target.value)} id="publicIn"/>
+        <input value={publicIn} type="radio" name="group" onChange={(e)=>setAccountType(e.target.value)} id="publicIn"/>
         <label htmlFor="publicIn">
            Public Institution
         </label>
@@ -65,7 +77,7 @@ export const Register = (props) => {
                 <div  className="lastname">
                 <label htmlFor="lname">Last Name 
                 </label>
-                <input value={lname} className="lname"  name="lname" onChange={(e) => setName(e.target.value)} id="lname" style={{border: '1px solid black'}} />
+                <input value={lname} className="lname"  name="lname" onChange={(e) => setlName(e.target.value)} id="lname" style={{border: '1px solid black'}} />
                     </div>
              
              
@@ -92,7 +104,8 @@ export const Register = (props) => {
             
             
             <Link to="/browseForm">  
-            <button className="submit-btn"  onClick={() => props.onFormSwitch('browseForm')}>Sign up</button>
+            <button className='submit'  onClick={() => handleFormSwitch('browseForm')}>Log In</button>
+            <button className="submit-btn" onClick={() => handleFormSwitch('browseForm')}>Sign up</button>
             </Link>  
             <Link to="/">
             <button className="link-button"  onClick={() => props.onFormSwitch('login') }>Already have an account? Log in</button>

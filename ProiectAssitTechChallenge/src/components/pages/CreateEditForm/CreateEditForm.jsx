@@ -20,7 +20,7 @@ export const CreateEditForm = (props) => {
                 <input type="text" placeholder="Title" id="title" name="title"style={{border: '1px solid black'}} />
                 <div className="scroll-bg1" style={{ marginBottom: "90px" }}>
                     <div className="scroll-div1">
-                        <div class="scroll-object1">
+                        <div className="scroll-object1">
 
                         </div>
                     </div>
