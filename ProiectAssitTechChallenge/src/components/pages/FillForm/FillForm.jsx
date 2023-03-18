@@ -28,11 +28,11 @@ export const FillForm = (props) => {
     <div className="fill-form">
    <h1 >FILL FORM</h1>
    <div className='cerere-de-inmatriculare'>
-    <p ><h3 style={{marginRight:'5px'}}>Form:</h3>Cerere de inmatriculare</p> 
+    <p1 ><h3 style={{marginRight:'5px'}}>Form:</h3>Cerere de inmatriculare</p1> 
     </div>
 
      <form className='formular1'>
-     <p style={{marginRight:'340px',fontSize:'20px',fontStyle:"italic"}}>Sectiunea 1:</p>
+     <p1 style={{marginRight:'340px',fontSize:'20px',fontStyle:"italic"}}>Sectiunea 1:</p1>
       <div>
         <label htmlFor="nume">Nume:</label>
         <input type="text" name="nume" />
