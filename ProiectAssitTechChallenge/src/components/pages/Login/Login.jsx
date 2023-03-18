@@ -1,7 +1,7 @@
 import './Login.css';
 import React, { useState } from "react";
 import img1 from '../../../images/loginPage.png';
-import img2 from '../../../images/iconsEmail.png';
+
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
 export const Login = (props) => {
     const [email, setEmail] = useState('');
