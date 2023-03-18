@@ -1,7 +1,7 @@
 import React, { useState,useRef } from "react";
-import { Link } from "react-scroll";
+///import { Link } from "react-scroll";
 import './BrowseForm.css';
-
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
 /*function MyComponent() {
     return (
       <div style={{ overflow: 'scroll', height: '200px' }}>
@@ -11,19 +11,21 @@ import './BrowseForm.css';
   }*/
 
   const cereri = [
-    { id: 1, tip:"1. Cerere de inmatriculare" },
-    { id: 2, tip:"2. Cerere de inmatriculare " },
-    { id: 3, tip:"3. Cerere de inmatriculare " },
+    { id: 1, tip:"                                                                                                                                                                                1. Cerere de inmatriculare" },
+    { id: 2, tip:"2. Cerere de Altceva " },
+    { id: 3, tip:"3. Cerere de Rezolvat " },
 ];
+
+
 export const BrowseForm = (props) => {
 
   //const[form,setForm]=useState('');
  const[typeform,setTypeform]=useState('');
-
-
+ const [selectedTip, setSelectedTip] = useState('');
+ 
  const handle_typeform_Click = (tip) => {
     setTypeform(tip);
-  
+   console.log("Tip cerere",tip);
   };
 
 
@@ -57,11 +59,12 @@ export const BrowseForm = (props) => {
     <p key={tip.id} onClick={()=>handle_typeform_Click(tip)}  style={{marginRight:"100px"}}>
   
     {tip.tip}
-
+ 
     </p>  
    
 
   ))}
+  
       
   
    </div>
@@ -73,15 +76,19 @@ export const BrowseForm = (props) => {
 
   </div>
   <div className="butoaneFormular">
+  <Link to="/CreateEditForm">
   <button type="submit"  style={{border: '1px solid black',width:'200px',height:"20px",marginBottom:'200px',margin: '30px'}}>
     CREATE FORM
-    
+   
     </button>
+    </Link>
+
+    <Link to="/CreateEditForm">
     <button type="submit"  style={{border: '1px solid black',width:'200px',height:"20px",marginBottom:'200px',margin: '30px'}}>
    EDIT FORM
     
     </button>
-
+    </Link>
     <button type="submit"  style={{border: '1px solid black',width:'200px',height:"20px",marginBottom:'200px',margin: '30px'}}>
   DELETE FORM
     

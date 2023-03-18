@@ -50,16 +50,16 @@ export const Register = (props) => {
                 
                
          <div className="Butoane">
-          <input value={individual} type="radio"   name="group" onChange={(e)=>setAccountType(e.target.value)} id="individual"/>
+          <input value="Individual" type="radio"   name="group" onChange={(e)=>setAccountType(e.target.value)} id="individual"/>
         <label htmlFor="individual">
             Individual
         </label>
 
-        <input value={company} type="radio" name="group" onChange={(e)=>setAccountType(e.target.value)} id="company"/>
+        <input value="Company" type="radio" name="group" onChange={(e)=>setAccountType(e.target.value)} id="company"/>
         <label htmlFor="company">
             Company
         </label>
-        <input value={publicIn} type="radio" name="group" onChange={(e)=>setAccountType(e.target.value)} id="publicIn"/>
+        <input value="PublicIn" type="radio" name="group" onChange={(e)=>setAccountType(e.target.value)} id="publicIn"/>
         <label htmlFor="publicIn">
            Public Institution
         </label>
