@@ -32,165 +32,163 @@ body
   margin-top: -25px; 
   margin-bottom: 0px;
 }
-  .ControlText{
-    font-size: 20px;
-    font-family: 'Merriweather';
-    text-align: center;
-    margin-bottom:10px;
-    color: white;
-  }
+.ControlText{
+  font-size: 20px;
+  font-family: 'Merriweather';
+  text-align: center;
+  margin-bottom:10px;
+  color: white;
+}
   
-  .Account
-  {
-    font-size: 17px;
-    width: 100%;
-    font-family: 'Merriweather';
-    text-align: left;
-    color: white;
-    margin-top: 5px; 
-  }
+.Account
+{
+  font-size: 17px;
+  width: 100%;
+  font-family: 'Merriweather';
+  text-align: left;
+  color: white;
+  margin-top: 5px; 
+}
   
-  .Butoane {
-    width: 100%;
-    display: flex; 
-    align-items: center;
-    margin-left: 1px;  
-   }
+.Butoane {
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  margin-left: 1px;  
+}
   
-  .Butoane label {
-    color: white;
-    font-size: 15px; 
-    margin-left: 4px; 
-    margin-right: 2px;
+.Butoane label {
+  color: white;
+  font-size: 15px; 
+  margin-left: 4px; 
+  margin-right: 2px;
+}
+.userInformation{
+  font-size: 17px;
+  width: 100%;
+  font-family: 'Merriweather';
+  text-align: left;
+  color: white;
+  margin-top: -1px; 
+}
+.firstname label {
+  font-size: 15px; 
+}
+.lastname label{
+  font-size: 15px; 
+}
+.firstname input {
+  margin-top: -1px; 
+}
+.lastname input {
+   margin-top: -1px; 
   }
-  .userInformation{
-    
-    font-size: 17px;
-    width: 100%;
-    font-family: 'Merriweather';
-    text-align: left;
-    color: white;
-    margin-top: -1px; 
-  }
-  .firstname label {
-    font-size: 15px; 
-  }
-  .lastname label{
-    font-size: 15px; 
-  }
-  .firstname input {
-    margin-top: -1px; 
-  }
-  .lastname input {
-    margin-top: -1px; 
-  }
-  .userInformation label
-  {
-    font-size: 15px;
-    width: 100%;
-    font-family: 'Merriweather';
-    text-align: left;
-    color: white;
-    margin-top: 0px; 
-  }
-   .userInformation #name
-  {
-    width: 348px;
-    height: 0px;
-    border-radius: 10px;
-    padding-left: 20px;
-    
-  }
-   .userInformation #lname
-  {
+.userInformation label
+{
+  font-size: 15px;
+  width: 100%;
+  font-family: 'Merriweather';
+  text-align: left;
+  color: white;
+  margin-top: 0px; 
+}
+.userInformation #name
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px; 
+}
+.userInformation #lname
+{
   width: 348px;
   height: 0px;
   border-radius: 10px;
   padding-left: 20px;
-
-  }
- 
-   .userInformation #adress
-  {
-    width: 348px;
-    height: 0px;
-    border-radius: 10px;
-    padding-left: 20px;
-    margin-top: -1px; 
-  }
-   .userInformation #companie
-  {
-    width: 348px;
-    height: 0px;
-    border-radius: 10px;
-    padding-left: 20px;
-    margin-top: -1px; 
-  }
-  #adresa_companiei
-  {
-    width: 348px;
-    height: 0px;
-    border-radius: 10px;
-    padding-left: 20px;
-    margin-top: -1px; 
-  }
-  #cod_fiscal
-  {
-    width: 348px;
-    height: 0px;
-    border-radius: 10px;
-    padding-left: 20px;
-    margin-top: -1px; 
-  }
-   .userInformation #email
-  {
-    width: 348px;
-    height: 0px;
-    border-radius: 10px;
-    padding-left: 20px;
-    margin-top: -1px; 
-  }
-   .userInformation #password
-  {
-    width: 348px;
-    height: 0px;
-    border-radius: 10px;
-    padding-left: 20px;
-    margin-top: -1px; 
-  }
-  .submit-btn
-  {
-    width: 380px;
-    height: 50px;
-    border: 2px solid #0f1870; 
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 27px;
-    text-align: center;
-    font-family: 'Merriweather';
-    color: white;
-    background-color: rgba(18, 18, 100, 1);
-  } 
-  .submit-btn:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-  .link-button
-  {
-    margin-top: -10px;
+}
+.userInformation #adress
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: -1px; 
+}
+.userInformation #companie
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: -1px; 
+}
+#adresa_companiei
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: -1px; 
+}
+#cod_fiscal
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: -1px; 
+}
+.userInformation #email
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: -1px; 
+}
+.userInformation #password
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: -1px; 
+}
+.submit-btn
+ {
+  width: 380px;
+  height: 50px;
+  border: 2px solid #0f1870; 
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Merriweather';
+  color: white;
+  background-color: rgba(18, 18, 100, 1);
+} 
+.submit-btn:hover 
+{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.link-button
+{
+   margin-top: -10px;
   font-family: 'Merriweather';
   text-decoration: none; 
   background: none;
   color: rgba(18, 18, 100, 1);
   font-size: 16px;
-  }
-  .Imagine2{
-    position: absolute;
+}
+.Imagine2
+{
+  position: absolute;
   top: 0;
   left: 2;
   display: flex;
   justify-content: left;
   align-items: center;
   height: 100vh;
-  }
+}
   

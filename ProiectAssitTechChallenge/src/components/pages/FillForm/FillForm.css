@@ -20,21 +20,21 @@ margin-bottom: 1000px;
 
 
 
-  form div label {
+.cerere-de-inmatriculare label {
     display: inline-block;
     width: 100px;
   }
   
-  form div input[type="text"],
-  form div input[type="email"] {
+  .cerere-de-inmatriculare input[type="text"],
+  .cerere-de-inmatriculare input[type="email"] {
     width: 300px;
   }
-
+/*
 form div + div {
   margin-top:10px;
 }
 
-
+*/
 .butoane-radio{
 display: grid;
 margin-left: 180px;

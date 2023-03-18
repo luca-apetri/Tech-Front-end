@@ -1,36 +1,166 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(250, 235, 140, 1);
+  font-family: 'Merriweather';
+  display: flex;
+}
+
 .Create-Edit-Forms {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    
+   
+
+    width: 90%;
+    /*
+  overflow: hidden;*/
+  margin: auto;
+  margin: 20 0 0 450px;
+  padding: 80px;
+  padding: 20px;
+  height: 100%;
   
-  .Create-Edit-Forms .TextTitle{
-    margin: 0;
+  }
+  .Create-Edit-Forms 
+  {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .TextTitle h1{
+    text-align: left;
+    font-size: 50px;
+  color:white;
+  padding: 20px;
+  margin-top: 90px; 
+  margin-bottom: 100px;
+  margin-left: 210px;
+  text-shadow:  1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  .TextTitle h3{
+    display: flex; 
+    text-align: left;
+    font-size: 26px;
+  color:rgba(18, 18, 100, 1);
+  font-family: 'Merriweather';
+  margin-top: 10px; 
+  margin-left: 190px;
   }
   
   .Create-Edit-Forms img {
+    display: flex; 
     border-radius: 100px;
-    margin-left: auto;
+    margin-left: 820px;
+    margin-top: -330px;
+    top: 20px;
+    right: 90px;
+
+    filter: contrast(120%);
+    filter:drop-shadow(0 0 5px rgba(18, 18, 100, 1));
   }
-  
-  .Create-Edit-Forms .Left {
-    margin-left: auto;
+
+  .Title{
+    width: 100%;
+  display: flex; 
+  align-items: center;
+  margin-left: 120px; 
+  margin-top: 40px; 
+  }
+.Title label{
+  font-family: 'Merriweather';
+  color:rgba(18, 18, 100, 1);
+  font-size: 26px;
+  margin-right: 3px;
+}
+.Title input
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+  .Left .scroll-bg1 {
+    margin-left: 70px;
+    width: 220px;
     flex: 1 1 50%;
     order: 1;
+
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:white;
+  }
+ 
+  
+  
+
+  .Butoane1
+  {
+    display: flex;
+    justify-content: flex-start;
+  }
+ 
+  .Butoane1 button {
+    margin-right: -30px;
+    width: 95px;
+    height: 40px;
+    border: 2px solid #0f1870; 
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: -75px;
+    
+    margin-left: 70px;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Merriweather';
+    color: white;
+    background-color: rgba(18, 18, 100, 1);
   }
   
+  .Left .scroll-bg2 {
+    margin-left: 70px;
+    width: 220px;
+    flex: 1 1 50%;
+    order: 1;
+
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:white;
+  }
+  .Butoane2
+  {
+    display: flex;
+    justify-content: flex-start;
+  }
+ 
+  .Butoane2 button {
+    margin-right: -30px;
+    width: 95px;
+    height: 40px;
+    border: 2px solid #0f1870; 
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: -75px;
+    
+    margin-left: 70px;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Merriweather';
+    color: white;
+    background-color: rgba(18, 18, 100, 1);
+  }
   .Create-Edit-Forms .Right {
     margin-right: auto;
     flex: 1 1 50%;
     order: 2;
   }
-  
   .Create-Edit-Forms .Bottom {
     width: 100%;
     order: 3;
   }
-
+/*
   .Create-Edit-Forms button{
     margin-bottom: auto;
-  }
+  }*/
   

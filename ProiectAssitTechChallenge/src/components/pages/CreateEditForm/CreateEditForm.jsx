@@ -4,20 +4,23 @@ import './CreateEditForm.css';
 import CEF from '../../../images/CreateEditForm.jpg'
 export const CreateEditForm = (props) => {
 
-
     return(
         
         <div className="Create-Edit-Forms">
             <div className="TextTitle">
                 <h1 >Create/Edit Form</h1>
                 <p></p>
-                <h3>Please complete all the information bellow</h3>
+                <h3>Please complete all the information bellow.</h3>
             </div>
             <img src={CEF} alt="imgCEF" style={{ width: '435px', height: '350px' }}/> 
             
+            <div className="Title">
+            <label htmlFor="title">Title:</label>
+                <input type="text"  id="title" name="title"style={{border: '1px solid black'}} />
+
+            </div>
             <div className="Left">
-                <label htmlFor="title">Title:</label>
-                <input type="text" placeholder="Title" id="title" name="title"style={{border: '1px solid black'}} />
+                
                 <div className="scroll-bg1" style={{ marginBottom: "90px" }}>
                     <div className="scroll-div1">
                         <div class="scroll-object1">
@@ -25,18 +28,28 @@ export const CreateEditForm = (props) => {
                         </div>
                     </div>
                 </div>
-
-                <button className="AddNew-DF" style={{border: '1px solid black',width:"300px"}} onClick={() => props.onFormSwitch('AddNew')}>Add new</button>
-                <button className="Delete-DF" style={{border: '1px solid black',width:"300px"}} onClick={() => props.onFormSwitch('Delete')}>Add new</button>
-
+                <div className="Butoane1">
+                <button className="AddNew-DF" style={{border: '1px solid black'}} onClick={() => props.onFormSwitch('AddNew')}>Add New</button>
+                <button className="Delete-DF" style={{border: '1px solid black'}} onClick={() => props.onFormSwitch('Delete')}>Delete</button>
+                </div>
+{/*
                 <div className="Selectie">
                     <select>
                         <option value="someOption">Some option</option>
                         <option value="otherOption">Other option</option>
                     </select>
+                    </div>
+    */}
+    <div className="scroll-bg2" style={{ marginBottom: "90px" }}>
+                    <div className="scroll-div2">
+                        <div class="scroll-object2">
 
-                    <button className="AddNew-SL" style={{border: '1px solid black',width:"300px"}} onClick={() => props.onFormSwitch('AddNew')}>Add new</button>
-                    <button className="Delete-SL" style={{border: '1px solid black',width:"300px"}} onClick={() => props.onFormSwitch('Delete')}>Add new</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="Butoane2">
+                    <button className="AddNew-SL" style={{border: '1px solid black'}} onClick={() => props.onFormSwitch('AddNew')}>Add New</button>
+                    <button className="Delete-SL" style={{border: '1px solid black'}} onClick={() => props.onFormSwitch('Delete')}>Delete</button>
                 </div>
             </div>
 
