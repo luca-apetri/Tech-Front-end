@@ -30,11 +30,16 @@ margin-bottom: 1000px;
     width: 300px;
   }
 
+/*
+form div + div {
+=======
+
 /*form div + div {
+>>>>>>> 26b885cbe6d3381eae6584578bc0f6eca36aa94e
   margin-top:10px;
 }*/
 
-
+*/
 .butoane-radio{
 display: grid;
 margin-left: 180px;
