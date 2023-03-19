@@ -14,6 +14,12 @@ import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-ro
 
 export const BrowseForm = (props) => {
 
+
+
+
+
+
+  
   //const[form,setForm]=useState('');
     const[typeform,setTypeform]=useState('');
     const [selectedTip, setSelectedTip] = useState('');
