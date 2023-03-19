@@ -1,22 +1,17 @@
-body
+.my-body
 {
   margin: 0;
   padding: 0;
   background-color: rgba(250, 235, 140, 1);
   font-family: 'Merriweather';
-  display: flex;
+ 
 }
 
 .Create-Edit-Forms {
     
-   
-
-    width: 90%;
-    /*
-  overflow: hidden;*/
-  margin: auto;
-  margin: 20 0 0 450px;
-  padding: 80px;
+  width: 100%;
+  margin: 1% auto 0;
+  margin-bottom: 0;
   padding: 20px;
   height: 100%;
   
@@ -72,10 +67,10 @@ body
 }
 .Title input
 {
-  width: 348px;
+  width: 220px;
   height: 0px;
   border-radius: 10px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
   .Left .scroll-bg1 {
     margin-left: 70px;
@@ -88,15 +83,16 @@ body
     border-radius: 5px;
     padding: 5px;
     background-color:white;
+    
   }
  
-  
-  
-
   .Butoane1
   {
     display: flex;
     justify-content: flex-start;
+  }
+  .Butoane1 :hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
  
   .Butoane1 button {
@@ -133,6 +129,10 @@ body
     display: flex;
     justify-content: flex-start;
   }
+  .Butoane2 :hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+ 
  
   .Butoane2 button {
     margin-right: -30px;
@@ -150,17 +150,261 @@ body
     color: white;
     background-color: rgba(18, 18, 100, 1);
   }
-  .Create-Edit-Forms .Right {
-    margin-right: auto;
-    flex: 1 1 50%;
-    order: 2;
+  .right {
+    float: right;
+     margin-top: -650px; 
+     margin-right: 200px;
   }
-  .Create-Edit-Forms .Bottom {
-    width: 100%;
+  .Right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+   
+  }
+  
+  .Right label{
+    font-family: 'Merriweather';
+  color:rgba(18, 18, 100, 1);
+  font-size: 26px;
+    grid-column: span 1;
+  }
+  .Right input {
+    grid-column: span 3;
+    border: 1px solid black;
+    width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  margin : 10px; 
+  }
+  .Right1 label {
+    font-family: 'Merriweather';
+    color:rgba(18, 18, 100, 1);
+    font-size: 26px;
+      grid-column: span 1;
+    display: inline-block;
+    margin-right: 180px; 
+    margin-left: -100px; 
+  }
+  .Right1 input[type='Checkbox']  {
+    display: inline-block;
+    grid-column: span 3;
+    width: 25px;
+    height: 25px;
+  border: 4px solid black;
+  background-color: white;
+  margin : 10px; 
+  margin-left: -160px;
+  margin-right: 380px;
+
+  }
+  .Right #label
+  {
+    margin-left: 180px; 
+  }
+  .Right #fieldType
+  {
+    margin-left: 130px; 
+   
+  }
+  .Right #placeHolder
+  {
+    margin-left:20px; 
+   
+  }
+  .Right select  {
+    font-family:'Merriweather'; 
+    font-size: 26px;
+    color:rgba(18, 18, 100, 1);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin : 20px; 
+    width: 380px;
+    height: 35px;
+    text-align: center;
+    margin-left: 130px;
+  }
+  
+  .Right2
+  {
+    position: relative;
+  
+  }
+  .Right2 label {
+    font-family: 'Merriweather';
+    color:rgba(18, 18, 100, 1);
+    font-size: 26px;
+    grid-column: span 1;
+    display: inline-block;
+    margin-right: 170px; 
+      margin-left: -250px;
+      margin-top: 20px; 
+  }
+  .Right2 textarea {
+    display: inline-block;
+    width: 370px;
+    height: 100px;
+    position: absolute;
+    margin-left: -145px; 
+  }
+  .Right3
+  {
+    position: relative;
+    margin-top: -250px;
+    margin-left: 110px;
+    margin-bottom: 135px;
+  }
+  .Right3 label {
+    font-family: 'Merriweather';
+    color:rgba(18, 18, 100, 1);
+    font-size: 26px;
+    grid-column: span 1;
+    display: inline-block;
+    margin-right: 170px; 
+      margin-left: -250px;
+      margin-top: 20px; 
+  }
+  .Right3 textarea {
+    display: inline-block;
+    width: 510px;
+    height: 220px;
+    position: absolute;
+    margin-left: -145px; 
+  }
+
+  .Right4 label {
+    font-family: 'Merriweather';
+    color:rgba(18, 18, 100, 1);
+    font-size: 26px;
+      grid-column: span 1;
+    display: inline-block;
+    margin-right: 10px; 
+    margin-left: 375px; 
+   
+  }
+  .Right4 select  {
+    font-family:'Merriweather'; 
+    font-size: 26px;
+    color:rgba(18, 18, 100, 1);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin : 20px; 
+    width: 270px;
+    height: 35px;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+   .Period label  {
+    width: 30%;
     order: 3;
+    display: inline-block;
+    text-align: left;
+    font-size: 26px;
+  color:rgba(18, 18, 100, 1);
+  font-family: 'Merriweather';
+  margin-top: 10px; 
+  margin-left: -600px;
   }
+  .Period input  {
+    font-family:'Merriweather'; 
+    font-size: 16px;
+    color:rgba(18, 18, 100, 1);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin : 20px; 
+    width: 35px;
+    height: 8px;
+    text-align: center;
+    margin-left: -80px;
+  }
+  .Create-Edit-Forms .create
+  {
+    width: 335px;
+  height: 60px;
+  border: 2px solid #0f1870; 
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 50px;
+  font-size: 27px;
+  text-align: center;
+  font-family: 'Merriweather';
+  color: white;
+  background-color: rgba(18, 18, 100, 1);
+  margin-bottom: 40px;
+  }
+  .Create-Edit-Forms .create:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  /*
+  .Right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    }
+    
+    .Right label{
+      font-family: 'Merriweather';
+    color:rgba(18, 18, 100, 1);
+    font-size: 26px;
+      grid-column: span 1;
+    }
+    .Right input {
+      grid-column: span 3;
+      border: 1px solid black;
+      width: 348px;
+    height: 0px;
+    border-radius: 10px;
+    margin : 20px; 
+    }
+  
+ 
+
+  
+ 
+.Right #placeHolder
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+.Right #mandatory
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: -1px; 
+}
+.Right #fieldType
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: -1px; 
+}
+.Right #content
+{
+  width: 348px;
+  height: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: -1px; 
+}
+*/
+ 
 /*
   .Create-Edit-Forms button{
     margin-bottom: auto;
+     label{
+  font-family: 'Merriweather';
+  color:rgba(18, 18, 100, 1);
+  font-size: 26px;
+  margin-right: 3px;
   }*/
   
