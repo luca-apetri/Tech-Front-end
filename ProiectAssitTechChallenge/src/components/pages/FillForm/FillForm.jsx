@@ -28,11 +28,11 @@ export const FillForm = (props) => {
     <div className="fill-form">
    <h1 >FILL FORM</h1>
    <div className='cerere-de-inmatriculare'>
-    <p1 ><h3 style={{marginRight:'5px'}}>Form:</h3>Cerere de inmatriculare</p1> 
+    <p ><h3 style={{marginRight:'5px'}}>Form:</h3>Cerere de inmatriculare</p> 
     </div>
 
-     <form className='formular1'>
-     <p1 style={{marginRight:'340px',fontSize:'20px',fontStyle:"italic"}}>Sectiunea 1:</p1>
+     <form className='formular1' >
+     <p style={{marginRight:'340px',fontSize:'20px',fontStyle:"italic"}}>Sectiunea 1:</p>
       <div>
         <label htmlFor="nume">Nume:</label>
         <input type="text" name="nume" />
@@ -95,18 +95,31 @@ export const FillForm = (props) => {
           <label style={{width:'500px'}}><input type="radio" name="solicit" value="eliberare-certificat-nou" />  Eliberarea unui nou certificat ca urmare a modificării datelor inscrise</label>
           <label style={{width:'160px'}}><input type="radio" name="solicit" value="radiere" />Radiere</label>        
         </div>
+        <div>
+          <button style={{marginBottom:'50px'}}>Scan Identity Card</button>
+        </div>
       </div>
 
     </form>
 
      <form className='formular2'>
+     <p style={{marginRight:'340px',fontSize:'20px',fontStyle:"italic",marginLeft:'40px'}}>Sectiunea 2:</p>
      <div>
         <label htmlFor="marca">Marca</label>
         <input type="marca" name="marca" />
       </div>
-  
-
-
+      <div>
+        <label htmlFor="tip">Tip</label>
+        <input type="tip" name="tip" />
+      </div>
+      <div>
+        <label htmlFor="numar">Numar</label>
+        <input type="numar" name="numar" />
+      </div>
+      <div>
+        <label htmlFor="identificare">Identificare</label>
+        <input type="identificare" name="identificare" />
+      </div>
      </form>
 
 

@@ -6,7 +6,7 @@ import {  BrowseForm   } from "./components/pages/BrowseForm/BrowseForm.jsx";
 
 import {  CreateEditForm  } from "./components/pages/CreateEditForm/CreateEditForm.jsx";
 
-
+import { useMediaQuery } from 'react-responsive'
 import img1 from './images/loginPage.png';
 
 
