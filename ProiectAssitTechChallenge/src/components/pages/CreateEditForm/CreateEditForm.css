@@ -241,6 +241,7 @@
       margin-top: 20px; 
   }
   .Right2 textarea {
+     resize: none;
     display: inline-block;
     width: 370px;
     height: 100px;
@@ -265,6 +266,7 @@
       margin-top: 20px; 
   }
   .Right3 textarea {
+    resize: none;
     display: inline-block;
     width: 510px;
     height: 220px;

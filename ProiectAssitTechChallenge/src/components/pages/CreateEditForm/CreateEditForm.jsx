@@ -108,7 +108,7 @@ export const CreateEditForm = (props) => {
 
             <div className="Period">
                 <label>Data retention period (days):</label>
-                <input type="number"></input>
+                <input type="number" min={1} max={30} placeholder="1"></input>
             </div>
                
                 <Link to="/browseForm">
