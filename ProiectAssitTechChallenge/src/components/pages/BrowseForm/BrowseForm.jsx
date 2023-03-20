@@ -1,6 +1,7 @@
 import React, { useState,useRef } from "react";
 ///import { Link } from "react-scroll";
 import './BrowseForm.css';
+import img3 from '../../../images/BrowseForm.jpg';
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
 /*function MyComponent() {
     return (
@@ -61,12 +62,14 @@ export const BrowseForm = (props) => {
   }  
 
   return (
-
+<div className="browse-body">
       <div className="browse-form">
-
-      <h3 style={{marginLeft:'100px'}}>BROWSE FORMS</h3>
-     <div className="propozitie"  style={{maxWidth: '210px',marginLeft:'264px'}}>
-     <p>Select from a type</p>
+      <div className="ImagineBrowseForm">
+                <img src={img3} alt="" style={{ width: '500px', height: '370px' }}/>
+            </div>
+      <h1>BROWSE FORMS</h1>
+     <div className="TextTipulSelectiei"  >
+     <p>Select from a type:</p>
   </div>
   <div className="scroll-bg">
   <div className="scroll-div">
@@ -77,7 +80,7 @@ export const BrowseForm = (props) => {
 
     {cereri.map((tip)=>(
        
-    <p key={tip.id} onClick={()=>handle_typeform_Click(tip)}  style={{marginRight:"100px",fontSize:'25px'}}>
+    <p key={tip.id} onClick={()=>handle_typeform_Click(tip)}  >
      
      {tip.tip}
  
@@ -98,46 +101,38 @@ export const BrowseForm = (props) => {
   </div>
   <div className="butoaneFormular">
   <Link to="/CreateEditForm">
-  <button type="submit"  style={{border: '1px solid black',width:'200px',height:"20px",marginBottom:'200px',margin: '30px'}}>
-    CREATE FORM
-   
-    </button>
+  <button className="submit"  >CREATE FORM</button>
     </Link>
-
-
-  
 
      {isOptionSelected===true ?(
 
     <Link to='/CreateEditForm'>
-    <button type="submit"  style={{border: '1px solid black',width:'200px',height:"20px",marginBottom:'200px',margin: '30px'}} onClick={() => handleEditClick()}>
-    EDIT FORM
-
+    <button className="submit"   onClick={() => handleEditClick()}>EDIT FORM
    </button>
    </Link>):(
-     <button type="submit"  style={{border: '1px solid black',width:'200px',height:"20px",marginBottom:'200px',margin: '30px'}} onClick={() => handleEditClick()} disabled>
+     <button className="submit"   onClick={() => handleEditClick()} disabled>
      EDIT FORM
 
     </button>
    
      )} 
 
-    <button type="submit"  style={{border: '1px solid black',width:'200px',height:"20px",marginBottom:'200px',margin: '30px'}} onClick={() => handleDeleteClick()}>
+    <button className="submit"   onClick={() => handleDeleteClick()}>
   DELETE FORM
     
     </button>
 
-    <button type="submit"  style={{border: '1px solid black',width:'200px',height:"20px",marginBottom:'200px',margin: '30px'}}>
+    <button className="submit"  >
    GENERATE PDF
     </button>
 
-    <button type="submit"   style={{border: '1px solid black',width:'200px',height:"20px",marginBottom:'200px',margin: '30px'}}>
+    <button className="submit"  >
    CREATE QR 
     </button>
   </div>
 
 
-  <div className="scroll-bg1" style={{marginBottom:"90px"}}>
+  <div className="scroll-bg1" >
   <div className="scroll-div1">
   <div className="scroll-object1">
   <table style={{ borderCollapse: 'collapse', width: '100%' }}>
@@ -186,11 +181,11 @@ export const BrowseForm = (props) => {
   </div>
   </div>
  <div className="butoaneSubmissions" style={{maxWidth: '800px'}}>
- <button type="submit" style={{border: '1px solid black',marginRight:'100px'}} >
+ <button className="submit" style={{border: '1px solid black',marginRight:'100px'}} >
    VIEW SUBMISSIONS
     </button>
 
-    <button type="submit" style={{border: '1px solid black'}}>
+    <button className="submit" style={{border: '1px solid black'}}>
    SEARCH SUBMISSIONS 
     </button>
 
@@ -201,7 +196,7 @@ export const BrowseForm = (props) => {
  </div>  
 
       
- 
+ </div>
 
 
     
