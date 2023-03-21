@@ -1,6 +1,7 @@
 import './Register.css';
 import React, { useState } from "react";
 import img1 from '../../../images/loginPage.png';
+import axios from 'axios';
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
 export const Register = (props) => {
     const [email, setEmail] = useState('');
@@ -20,7 +21,28 @@ export const Register = (props) => {
         e.preventDefault();
         console.log(email);
     }
+
+    
+
     const handleFormSwitch = (formType) => {
+        axios.post('http://localhost:8080/users/register', {
+
+        name: name,
+        surename: lname,
+        address: adress,
+        companyName: compName,
+        fiscalCode: fiscCode,
+        accountType: accountType,
+        email: email,
+        password: pass
+
+        }).then((response) => {
+            console.log(response.data);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+
         console.log("Nume:", name);
         console.log("Prenume:",lname);
         console.log("Adresa:",adress);

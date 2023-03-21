@@ -1,6 +1,7 @@
 import './Login.css';
 import React, { useState } from "react";
 import img1 from '../../../images/loginPage.png';
+import axios from 'axios';
 
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
 export const Login = (props) => {
@@ -21,8 +22,17 @@ export const Login = (props) => {
     }
 
     const handleFormSwitch = (formType) => {
-        console.log('email:', email);
-        console.log('password:', pass);
+      axios.post('http://localhost:8080/users/login', {
+
+      email: email,
+      password: pass
+
+      }).then((response) => {
+          console.log(response.data);
+      })
+      .catch((error) => {
+          console.log(error);
+      });
         setFormType(formType);
     };
 
