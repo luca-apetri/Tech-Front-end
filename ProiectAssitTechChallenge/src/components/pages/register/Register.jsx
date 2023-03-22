@@ -2,8 +2,10 @@ import './Register.css';
 import React, { useState } from "react";
 import img1 from '../../../images/loginPage.png';
 import axios from 'axios';
+import userID from '../Login/Login.jsx';
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
 export const Register = (props) => {
+    
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
@@ -101,9 +103,6 @@ export const Register = (props) => {
                 </label>
                 <input value={lname} className="lname"  name="lname" onChange={(e) => setlName(e.target.value)} id="lname" style={{border: '1px solid black'}} />
                     </div>
-             
-             
-                 
             
             <label htmlFor="Adress">Adress</label>
             <input value={adress} onChange={(e) => setAdress(e.target.value)}type="adress"  id="adress" name="adress" style={{border: '1px solid black'}}/>
